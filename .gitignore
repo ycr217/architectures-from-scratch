@@ -55,3 +55,15 @@ saved_models/
 # ==========================================
 .DS_Store
 Thumbs.db
+
+# ==========================================
+# IDEs & Editors
+# ==========================================
+# VS Code
+.vscode/
+
+# PyCharm / IntelliJ Idea
+.idea/
+*.iml
+*.iws
+*.ipr
