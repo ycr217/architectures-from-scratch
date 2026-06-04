@@ -1,0 +1,57 @@
+# ==========================================
+# Python & Environment Variables
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv/
+env/
+venv/
+
+# ==========================================
+# Jupyter Notebooks
+# ==========================================
+.ipynb_checkpoints/
+
+# ==========================================
+# Deep Learning Weights & Checkpoints
+# ==========================================
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.h5
+*.pb
+*.onnx
+
+# ==========================================
+# Datasets & Media
+# ==========================================
+data/
+datasets/
+*.csv
+*.tsv
+*.mp4
+*.avi
+*.jpg
+*.jpeg
+*.png
+*.gif
+
+# ==========================================
+# Training Logs & Outputs
+# ==========================================
+logs/
+runs/
+wandb/
+tensorboard/
+outputs/
+results/
+saved_models/
+
+# ==========================================
+# OS Generated Files
+# ==========================================
+.DS_Store
+Thumbs.db
