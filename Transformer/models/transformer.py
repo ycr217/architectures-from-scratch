@@ -1,7 +1,7 @@
 import torch.nn as nn
 import math
 
-from Transformer.models.blocks import PositionalEncoding, EncoderTransformerBlock, DecoderTransformerBlock
+from .blocks import PositionalEncoding, EncoderTransformerBlock, DecoderTransformerBlock
 
 class Transformer(nn.Module):
     def __init__(self, src_vocab_size, tgt_vocab_size, d_model=512, num_head=8, num_layers=6, d_ffn=2048, d_k=64, d_v=64, dropout=0.1, max_seq_len=1024):
