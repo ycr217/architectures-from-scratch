@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import math
 
-from .attention import MultiHeadAttention, CausalMultiHeadAttention, CrossMultiHeadAttention
+from attention import MultiHeadAttention, CausalMultiHeadAttention, CrossMultiHeadAttention
 
 
 class PositionalEncoding(nn.Module):

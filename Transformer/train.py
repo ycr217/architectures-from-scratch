@@ -29,7 +29,7 @@ def train():
 
     criterion = nn.CrossEntropyLoss(ignore_index=0)
 
-    epochs = 5
+    epochs = 15
     model.train()
 
     for epoch in range(epochs):
@@ -65,6 +65,11 @@ def train():
             # Update progress bar
             total_loss += loss.item()
             loop.set_postfix(loss=loss.item())
+
+            if (epoch + 1) % 5 == 0 and epoch != 14:
+                ckpt_path = f"checkpoints/transformer_en_zh_epoch_{epoch + 1}.pth"
+                torch.save(model.state_dict(), ckpt_path)
+                print(f"--> Checkpoint saved at Epoch {epoch + 1}: {ckpt_path}")
 
         print(f"Epoch {epoch + 1} Average Loss: {total_loss / len(dataloader):.4f}")
 

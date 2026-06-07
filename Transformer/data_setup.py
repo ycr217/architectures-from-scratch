@@ -29,7 +29,7 @@ def train_tokenizer(texts, vocab_size=10000):
 def setup_data_and_tokenizers():
     print("Loading OPUS-100 Chinese-English dataset...")
     # We slice the first 50,000 rows to keep training under 1 hour on an RTX 4090
-    opus_dataset = load_dataset("Helsinki-NLP/opus-100", "en-zh", split="train[:50000]")
+    opus_dataset = load_dataset("Helsinki-NLP/opus-100", "en-zh", split="train[:100000]")
 
     # Extract the text into separate lists
     en_texts = [item['en'] for item in opus_dataset['translation']]
